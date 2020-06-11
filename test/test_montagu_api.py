@@ -25,3 +25,10 @@ def test_diseases():
     disease = diseases[0]
     assert disease['id'] == 'YF'
     assert disease['name'] == 'Yellow Fever'
+
+
+def test_error_on_get():
+    api = MontaguAPI(base_url, user, password)
+    with pytest.raises(Exception) as ex:
+        api.get("nonexistent-path")
+    assert 'Exception: Unexpected status code: 404' in str(ex)
