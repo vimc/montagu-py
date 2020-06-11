@@ -14,9 +14,8 @@ def test_init():
 def test_error_on_incorrect_credentials():
     with pytest.raises(Exception) as ex:
         MontaguAPI(base_url, user, 'wrong password')
-    print("EXCEPTION")
-    print(ex.__dict__)
-    assert 'Exception: Unexpected status code: 401. Unable to authenticate.' in str(ex)
+    assert 'Exception: Unexpected status code: 401. Unable to authenticate.' \
+           in str(ex)
 
 
 def test_diseases():
