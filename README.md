@@ -1,7 +1,7 @@
 # montagu-py
 
-[![Build Status](https://travis-ci.org/vimc/montagu-py.svg?branch=vimc-4028)](https://travis-ci.org/mrc-ide/hint-deploy)
-[![codecov.io](https://codecov.io/github/vimc/montagu-py/coverage.svg?branch=vimc-4028)](https://codecov.io/github/mrc-ide/hint-deploy?branch=master)
+[![Build Status](https://travis-ci.com/vimc/montagu-py.svg?branch=master)](https://travis-ci.com/vimc/montagu-py)
+[![codecov.io](https://codecov.io/github/vimc/montagu-py/coverage.svg?branch=master)](https://codecov.io/github/vimc/montagu-py?branch=master)
 
 Python client for [Montagu API](https://github.com/vimc/montagu-api). 
 
