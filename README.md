@@ -9,7 +9,7 @@ Initial use case is for authentication only.
 
 ## Usage
 
-The client currently supports authenticating with Montagu, and a single example endpoint. 
+The client currently supports authenticating with Montagu, and a single example endpoint. Python 3.6 is required.
 
 To authenticate, instantiate the `MontaguAPI` class, providing base url, username and password as parameters:
 
