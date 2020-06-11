@@ -12,6 +12,11 @@ function on_interrupt() {
     docker-compose --project-name montagu rm
 }
 
+# Generate test data
+image=docker.montagu.dide.ic.ac.uk:5000/montagu-generate-test-data:master
+docker pull $image
+docker run --rm --network=montagu_default $image
+
 # Wait for Ctrl+C
 echo "Ready to use. Press Ctrl+C to teardown."
 sleep infinity

@@ -20,8 +20,8 @@ docker run --network=montagu_default $migrate_image
 # add test user
 here=$(dirname $0)
 
-$here/montagu_cli.sh add "Test User" test.user \
-    test.user@example.com password \
-    --if-not-exists
+#$here/montagu_cli.sh add "Test User" test.user \
+#    test.user@example.com password \
+#    --if-not-exists
 
-$here/montagu_cli.sh addRole test.user user
+#$here/montagu_cli.sh addRole test.user user
