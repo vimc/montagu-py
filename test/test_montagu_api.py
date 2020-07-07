@@ -14,7 +14,7 @@ def test_init():
 def test_error_on_incorrect_credentials():
     with pytest.raises(Exception) as ex:
         MontaguAPI(base_url, user, 'wrong password')
-    assert 'Exception: Unexpected status code: 401. Unable to authenticate.' \
+    assert 'Unexpected status code: 401. Unable to authenticate.' \
            in str(ex)
 
 
@@ -31,4 +31,4 @@ def test_error_on_get():
     api = MontaguAPI(base_url, user, password)
     with pytest.raises(Exception) as ex:
         api.get("nonexistent-path")
-    assert 'Exception: Unexpected status code: 404' in str(ex)
+    assert 'Unexpected status code: 404' in str(ex)
