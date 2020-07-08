@@ -29,4 +29,4 @@ setup(name="montagu-api",
       tests_require=[
           "pytest"
       ],
-      install_requires = requirements)
+      install_requires=requirements)
