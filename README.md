@@ -41,3 +41,13 @@ add a test user to Montagu.
 ## Testing
 
 Run dependencies as described above, then run `pytest`
+
+## Publishing
+
+This repository is published to [PyPI](https://pypi.org) and, for testing, to Test PyPI. 
+See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).
+
+Publishing configuration can be found in `setup.py`.
+
+Some troubleshooting tips for publishing Python packages can be found in the 
+[consellations repo](https://github.com/reside-ic/constellation/blob/master/publish.md).
