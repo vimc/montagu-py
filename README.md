@@ -44,7 +44,7 @@ Run dependencies as described above, then run `pytest`
 
 ## Publishing
 
-This repository is published to [PyPI](https://pypi.org/project/montagu-py/). 
+This repository is published to [PyPI](https://pypi.org/). 
 
 Building and publishing is done manually, with local sources. 
 See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).

@@ -3,7 +3,7 @@
 .cache
 build
 dist
-montagu_py.egg-info
+montagu.egg-info
 /*/__pycache__/
 /test/*/__pycache__/
 /*/*.pyc
