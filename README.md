@@ -44,10 +44,13 @@ Run dependencies as described above, then run `pytest`
 
 ## Publishing
 
-This repository is published to [PyPI](https://pypi.org) and, for testing, to Test PyPI. 
+This repository is published to [PyPI](https://pypi.org/project/montagu-py/). 
+
+Building and publishing is done manually, with local sources. 
 See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).
 
-Publishing configuration can be found in `setup.py`.
+Publishing configuration can be found in `setup.py`. Remember to increment `version` when publishing a new build.
 
 Some troubleshooting tips for publishing Python packages can be found in the 
 [consellations repo](https://github.com/reside-ic/constellation/blob/master/publish.md).
+
