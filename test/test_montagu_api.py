@@ -1,4 +1,4 @@
-from src.montagu_api import MontaguAPI
+from montagu.montagu_api import MontaguAPI
 import pytest
 
 base_url = 'http://localhost:8080'
