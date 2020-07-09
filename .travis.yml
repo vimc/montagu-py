@@ -16,7 +16,7 @@ install:
 script:
   - pip3 install -r requirements.txt
   - ./scripts/run-dependencies.sh
-  - pytest --cov=src
+  - pytest --cov=montagu
   - pycodestyle .
 
 after_script:
