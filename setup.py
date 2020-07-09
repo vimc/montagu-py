@@ -8,7 +8,7 @@ requirements = [
     "pytest"]
 
 setup(name="montagu",
-      version="0.0.2",
+      version="0.0.3",
       description="Python client for Montagu API",
       long_description=long_description,
       classifiers=[

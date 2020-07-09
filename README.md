@@ -44,12 +44,24 @@ Run dependencies as described above, then run `pytest`
 
 ## Publishing
 
-This repository is published to [PyPI](https://pypi.org/). 
+This repository is published to [PyPI](https://pypi.org/project/montagu). 
 
 Building and publishing is done manually, with local sources. 
-See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).
 
-Publishing configuration can be found in `setup.py`. Remember to increment `version` when publishing a new build.
+Publishing configuration can be found in `setup.py`, and any classe, methods etc which should be accessible to users of the package
+must be added to `montagu/__init__.py`. 
+Remember to increment `version` before publishing a new build.
+
+To publish a new version:
+1. Delete the following folders: `.eggs`, `build`, `dist`, `montagu.egg-info`. 
+1. Build the package with: `python3 setup.py sdist bdist_wheel`
+1. Publish with: `python3 -m twine upload dist/*`
+
+To use the MontaguAPI class as a client of the package, include `montagu` in your `requirements.txt`. Import with
+`import montagu`, and instantiate the API class with `montagu.MontaguAPI(url, username, password)`
+
+
+See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).
 
 Some troubleshooting tips for publishing Python packages can be found in the 
 [consellations repo](https://github.com/reside-ic/constellation/blob/master/publish.md).
