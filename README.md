@@ -48,18 +48,17 @@ This repository is published to [PyPI](https://pypi.org/project/montagu).
 
 Building and publishing is done manually, with local sources. 
 
-Publishing configuration can be found in `setup.py`, and any classe, methods etc which should be accessible to users of the package
+Publishing configuration can be found in `setup.py`, and any classes, methods etc which should be accessible to users of the package
 must be added to `montagu/__init__.py`. 
-Remember to increment `version` before publishing a new build.
+Remember to increment `version` in `setup.py` before publishing a new build.
 
-To publish a new version:
+To publish:
 1. Delete the following folders: `.eggs`, `build`, `dist`, `montagu.egg-info`. 
 1. Build the package with: `python3 setup.py sdist bdist_wheel`
 1. Publish with: `python3 -m twine upload dist/*`
 
 To use the MontaguAPI class as a client of the package, include `montagu` in your `requirements.txt`. Import with
 `import montagu`, and instantiate the API class with `montagu.MontaguAPI(url, username, password)`
-
 
 See general instructions for publishing Python packages [here](https://packaging.python.org/tutorials/packaging-projects/).
 
